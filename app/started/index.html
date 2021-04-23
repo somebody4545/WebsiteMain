@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="Game emulator" property="og:title">
+	<meta content="Try it now! Supports many retro games!" property="og:description">
+	<meta content="https://www.somebody4545.tk/app" property="og:url">
+	<meta content="#43B581" data-react-helmet="true" name="theme-color">
+	<meta content="https://cdn.discordapp.com/avatars/697913907528073296/81974f0d3523edc5f4cd70388ada823b.png?size=1024" property="og:image">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Game Emulator</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link href="style.css?" rel="stylesheet" type="text/css" />
+	<link rel="icon" href=".../favicon.ico?"/>
+	<script>
+		const favicon = document.querySelector('[rel=icon]');
+    window.onbeforeunload = function(e) {
+       return "C'mon, why aren't you dancing?";
+    };
+		var element = document.querySelector("#container");
+	</script>
+</head>
+<body oncontextmenu="return false;" id="element-to-hide">
+	<center class="cover"style="position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #000; z-index:9999;"><h1 class="cover" style='color:white;'>Booting up emulator</h1><h3 style='color:white;'>You can unfocus this window for now</h3></center>
+
+	<div class="cover" style="position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #000; z-index:9998;"></div>
+	<script>
+	function sleep(ms) {
+		return new Promise(resolve => setTimeout(resolve, ms));
+	}
+
+	$(window).on('load', async function() {
+		await sleep(2000);
+		$(".cover").hide();
+		document.title = 'Get Rickrolled!'
+		favicon.href = "favicon.ico?"
+	});
+	</script>
+	<script language="JavaScript">
+		document.onkeydown = function(e) {
+		if(event.keyCode == 123) {
+		return false;
+		}
+		if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+		return false;
+		}
+		if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+		return false;
+		}
+		if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+		return false;
+		}
+		}
+	</script>
+	<script language="JavaScript">
+		/**
+			* Disable right-click of mouse, F12 key, and save key combinations on page
+			* By Arthur Gareginyan (https://www.arthurgareginyan.com)
+			* For full source code, visit https://mycyberuniverse.com
+			*/
+		window.onload = function() {
+			document.addEventListener("contextmenu", function(e){
+				e.preventDefault();
+			}, false);
+			document.addEventListener("keydown", function(e) {
+			//document.onkeydown = function(e) {
+				// "I" key
+				if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+					disabledEvent(e);
+				}
+				// "J" key
+				if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+					disabledEvent(e);
+				}
+				// "S" key + macOS
+				if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+					disabledEvent(e);
+				}
+				// "U" key
+				if (e.ctrlKey && e.keyCode == 85) {
+					disabledEvent(e);
+				}
+				// "F12" key
+				if (event.keyCode == 123) {
+					disabledEvent(e);
+				}
+			}, false);
+			function disabledEvent(e){
+				if (e.stopPropagation){
+					e.stopPropagation();
+				} else if (window.event){
+					window.event.cancelBubble = true;
+				}
+				e.preventDefault();
+				return false;
+			}
+		};
+	</script>
+	<div class="unselectable nocursor">
+		<div class='jumbotron'><h1 style='text-align: center'>Get rickrolled!</h1> <p style='text-align: center'>You can't do anything to the controls! All you can do is leave! You can't even inspect >:)</p> <p style='text-align: center'>I gave up on the emulator but I wont give you up!</p></div>
+		<video style='margin-left: auto; margin-right: auto; display: block' width="60%" height="auto" autoplay loop oncontextmenu="return false;">
+		<source src="reallycoolvideo.mp4" type="video/mp4" class="unselectable">
+		sad. :(
+		</video>
+		<div></div>
+	</div>
+	<a style='position:relative; margin-left: auto; margin-right: auto; display: block' href="https://www.somebody4545.tk"><button style='display: table-cell; width: 100%; height: 100%; text-align: center; vertical-align: center; font-size:20px; border-radius: 0;' type="button" class="btn btn-primary eyscursor">Go back to main page</button></a>
+</body>
+</html>
