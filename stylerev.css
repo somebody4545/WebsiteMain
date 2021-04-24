@@ -1,6 +1,38 @@
+
+body 
+{
+background-image: url('/media/background/bruhtilebg.png');
+background-attachment: fixed
+}
+.linkimg{border-radius:20px;}
 .jumbotron {
-    display: block;
-		padding: 0px;
-		height: 100%;
- 	 width: 100%;
+display: block;
+height: 100%;
+width: 100%;
+}
+*[class*="col-lg"] {padding:35px 35px}
+
+
+.block {
+  background: #ffffff;
+  position: relative;
+  margin-top: 100px;
+  height: 1000px;
+}
+.forefront-element {
+	-webkit-transform: translateZ(999px) scale(.7);
+	transform: translateZ(999px) scale(.7);
+	z-index: 1;
+}
+
+.base-element {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	z-index: 4;
+}
+
+.background-element {
+	-webkit-transform: translateZ(-999px) scale(2);
+	transform: translateZ(-999px) scale(2);
+	z-index: 3;
 }
