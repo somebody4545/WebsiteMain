@@ -2,7 +2,6 @@
 body 
 {
 background-image: url('/media/background/bruhtilebg.png');
-background-attachment: fixed
 }
 .linkimg{border-radius:20px;}
 .jumbotron {
@@ -10,8 +9,8 @@ display: block;
 height: 100%;
 width: 100%;
 }
-*[class*="col-lg"] {padding:35px 35px}
-
+*[class*="col-"] {padding:35px 35px}
+*[class*="col-"] .nopad {padding:0px 0px}
 
 .block {
   background: #ffffff;
