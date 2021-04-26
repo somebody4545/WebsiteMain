@@ -3,7 +3,7 @@
                 e = document.documentElement,
                 scrollPercent;
         $(window).unbind("scroll").scroll(function () {
-            scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
+            scrollPercent = $(window).scrollTop() / 1.2;
             body.style.backgroundPosition = "0px " + scrollPercent + "px";
         });
 })();

@@ -1,13 +1,28 @@
 
 body 
 {
-background-image: url('/media/background/bruhtilebg.png');
+background-color: black;
+background-image: url('/media/background/bruhnew.png');
 }
-.linkimg{border-radius:20px;}
+
+.linkimg{border-radius:20px;
+border-style: solid;
+border-color: dimgrey;}
+
 .jumbotron {
 display: block;
 height: 100%;
 width: 100%;
+background-color: grey;
+box-shadow: 0px 0px 20px 10px #333333;
+border-style: solid;
+border-color: dimgrey;
+}
+a *{
+	color:aquamarine;
+}
+* {
+	color:white;
 }
 *[class*="col-"] {padding:35px 35px}
 *[class*="col-"] .nopad {padding:0px 0px}
