@@ -50,3 +50,8 @@ a *{
 	transform: translateZ(-999px) scale(2);
 	z-index: 3;
 }
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: .3rem;
+}
